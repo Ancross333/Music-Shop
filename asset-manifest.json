@@ -1,20 +1,33 @@
 {
   "files": {
-    "main.css": "/Music-Shop/static/css/main.fc69fe06.css",
-    "main.js": "/Music-Shop/static/js/main.7c6dcfc5.js",
+    "main.css": "/Music-Shop/static/css/main.67d91cb3.css",
+    "main.js": "/Music-Shop/static/js/main.89737d27.js",
+    "static/media/peaceSells.png": "/Music-Shop/static/media/peaceSells.44fa25700b6348f22afa.png",
     "static/media/andJusticeForAllCover.png": "/Music-Shop/static/media/andJusticeForAllCover.87b17df2fe791b9d4e7a.png",
+    "static/media/rustInPeace.png": "/Music-Shop/static/media/rustInPeace.1c5412ba0ad3329575c7.png",
     "static/media/masterOfPuppetsCover.png": "/Music-Shop/static/media/masterOfPuppetsCover.c8443243c324c231c2c8.png",
     "static/media/deathMagneticCover.png": "/Music-Shop/static/media/deathMagneticCover.59038ed653b3ae6cc254.png",
     "static/media/rideTheLightningCover.png": "/Music-Shop/static/media/rideTheLightningCover.0c2df17be3f9ac99193c.png",
+    "static/media/fenderPicks.png": "/Music-Shop/static/media/fenderPicks.87fce439af904092f5ab.png",
+    "static/media/9-42Strings.png": "/Music-Shop/static/media/9-42Strings.14021943d6f6ed814647.png",
+    "static/media/countdownToExtinction.png": "/Music-Shop/static/media/countdownToExtinction.786418d95abcd2dd88a8.png",
+    "static/media/10-46Strings.png": "/Music-Shop/static/media/10-46Strings.a1d60daaaca8ce57c22c.png",
+    "static/media/10-52Strings.png": "/Music-Shop/static/media/10-52Strings.fcfcdba2a897239ba926.png",
     "static/media/killEmAllCover.png": "/Music-Shop/static/media/killEmAllCover.6171aa99329d44c519d1.png",
+    "static/media/snarxTuner.png": "/Music-Shop/static/media/snarxTuner.b07655763db8d5441c6e.png",
+    "static/media/joyoTuner.png": "/Music-Shop/static/media/joyoTuner.0808090f239ae68addab.png",
+    "static/media/herdiumPicks.png": "/Music-Shop/static/media/herdiumPicks.c0003f4a4cdf5c606275.png",
+    "static/media/fenderTuner.png": "/Music-Shop/static/media/fenderTuner.4fdbfe1840f533cdd6e3.png",
+    "static/media/gibsonPicks.png": "/Music-Shop/static/media/gibsonPicks.42ce5b5380711ade4e21.png",
+    "static/media/fenderStrat.png": "/Music-Shop/static/media/fenderStrat.b79c53033d8c38135d84.png",
     "static/media/mainImage.jpg": "/Music-Shop/static/media/mainImage.8f2807a3f4b7c0e724c9.jpg",
     "static/media/blackAlbumCover.png": "/Music-Shop/static/media/blackAlbumCover.c2b91f90286515997dfe.png",
     "index.html": "/Music-Shop/index.html",
-    "main.fc69fe06.css.map": "/Music-Shop/static/css/main.fc69fe06.css.map",
-    "main.7c6dcfc5.js.map": "/Music-Shop/static/js/main.7c6dcfc5.js.map"
+    "main.67d91cb3.css.map": "/Music-Shop/static/css/main.67d91cb3.css.map",
+    "main.89737d27.js.map": "/Music-Shop/static/js/main.89737d27.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc69fe06.css",
-    "static/js/main.7c6dcfc5.js"
+    "static/css/main.67d91cb3.css",
+    "static/js/main.89737d27.js"
   ]
 }
