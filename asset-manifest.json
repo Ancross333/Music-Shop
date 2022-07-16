@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/Music-Shop/static/css/main.371326e3.css",
-    "main.js": "/Music-Shop/static/js/main.f1c4ffa8.js",
+    "main.css": "/Music-Shop/static/css/main.fc69fe06.css",
+    "main.js": "/Music-Shop/static/js/main.7c6dcfc5.js",
+    "static/media/andJusticeForAllCover.png": "/Music-Shop/static/media/andJusticeForAllCover.87b17df2fe791b9d4e7a.png",
+    "static/media/masterOfPuppetsCover.png": "/Music-Shop/static/media/masterOfPuppetsCover.c8443243c324c231c2c8.png",
+    "static/media/deathMagneticCover.png": "/Music-Shop/static/media/deathMagneticCover.59038ed653b3ae6cc254.png",
+    "static/media/rideTheLightningCover.png": "/Music-Shop/static/media/rideTheLightningCover.0c2df17be3f9ac99193c.png",
+    "static/media/killEmAllCover.png": "/Music-Shop/static/media/killEmAllCover.6171aa99329d44c519d1.png",
     "static/media/mainImage.jpg": "/Music-Shop/static/media/mainImage.8f2807a3f4b7c0e724c9.jpg",
+    "static/media/blackAlbumCover.png": "/Music-Shop/static/media/blackAlbumCover.c2b91f90286515997dfe.png",
     "index.html": "/Music-Shop/index.html",
-    "main.371326e3.css.map": "/Music-Shop/static/css/main.371326e3.css.map",
-    "main.f1c4ffa8.js.map": "/Music-Shop/static/js/main.f1c4ffa8.js.map"
+    "main.fc69fe06.css.map": "/Music-Shop/static/css/main.fc69fe06.css.map",
+    "main.7c6dcfc5.js.map": "/Music-Shop/static/js/main.7c6dcfc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.371326e3.css",
-    "static/js/main.f1c4ffa8.js"
+    "static/css/main.fc69fe06.css",
+    "static/js/main.7c6dcfc5.js"
   ]
 }
