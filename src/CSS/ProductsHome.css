@@ -1,0 +1,126 @@
+.productsHomeContainer{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 10;
+  background-color: white;
+}
+
+.sidebarContainer{
+  box-shadow: grey 3px 3px 20px;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  /* overflow: auto; */
+}
+
+.sidebarHeader{
+  font-size: 2rem;
+}
+
+.sidebarLinks{
+  margin-top: 25px;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.sidebarLink{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  transition: transform, 0.3s;
+}
+
+.sidebarLink:hover{
+  transform: translateY(-3px);
+}
+
+.productDisplayContainer{
+  margin: 20px;
+  border-radius: 15px;
+  padding: 25px;
+  flex-grow: 1;
+  box-shadow: grey 3px 3px 20px;
+  overflow: auto;
+}
+
+.productsForSaleContainer{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productForSaleContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.productForSaleHeader{
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.productForSaleImageContainer{
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+}
+
+.productForSaleDescription{
+  margin-bottom: 25px;
+}
+
+.purchaseContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.addToCartButton{
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #1a73e8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.15s;
+}
+
+.priceLabel{
+ pointer-events: none;
+}
+
+.addToCartButton:hover{
+  transform: translateY(-3px);
+  box-shadow: grey 3px 3px 3px;
+}
+
+@media (max-width: 725px){
+  
+  .sidebarLinks{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sidebarContainer{
+    flex-grow: 1;
+  }
+  
+  .productsHomeContainer{
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 630px){
+  .sidebarLink{
+    font-size: .75rem;
+  }
+
+  .sidebarLinks{
+    gap: 30px;
+  }
+}

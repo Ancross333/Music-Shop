@@ -1,0 +1,112 @@
+.landingPageContainer{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-image: linear-gradient(to right, rgb(64, 92, 252), rgb(54, 52, 161));
+  justify-content: center;
+  align-items: center;
+}
+
+.titleCardContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}  
+
+.titleCardMain{
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 60ch;
+}
+
+.titleHeader{
+  color: white;
+}  
+
+.titleHeader h1{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}  
+
+.titleHeader h2{
+  font-size: 1rem;
+  margin-bottom: 30px;
+}  
+
+.productsContainer{
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.productContainer{
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 15ch;
+}
+
+.productContainer p{
+  color: white;
+  text-align: center;
+}
+
+.titleImageContainer img{
+  border-radius: 15px;
+}
+
+@media(max-width: 1175px){
+  .titleCardMain{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media(max-width: 725px){
+  .titleCardMain{
+    max-width: 30ch;
+  }
+
+  .titleImageContainer{
+    display: none;
+  }
+}
+
+@media(max-width: 825px){
+
+  .productsContainer{
+    gap: 40px;
+  }
+  .productContainer{
+    max-width: 10ch;
+  }
+}
+
+@media(max-width: 575px){
+  .productContainer img{
+    width: 50px;
+  }
+
+  .productContainer{
+    max-width: 6ch;
+  }
+}
+
+@media(max-width: 400px){
+  .productContainer p{
+    font-size: .75rem;
+  }
+
+  .productContainer img{
+    width: 40px;
+  }
+
+  .productsContainer{
+    gap: 20px;
+  }
+}
