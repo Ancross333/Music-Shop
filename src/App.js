@@ -11,6 +11,8 @@ import { BuyModalOpenContext } from './Components/Contexts/Modals/BuyModalOpenCo
 import { SetModalContent } from './Components/Contexts/Modals/SetModalContentContext';
 import { CurrentUser } from './Components/Contexts/User Data/CurrentUserContext';
 import CartModal from './Components/Sections/Modals/Navbar/Cart/CartModal';
+import { NoAccountModalOpen } from './Components/Contexts/Modals/NoAccountModalOpenContext';
+import NoAccountModal from './Components/Sections/Modals/Product Pages/NoAccountModal';
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
   const [registerOpen, setRegisterOpen] = useState(() => {return false;});
   const [buyModalOpen, setBuyModalOpen] = useState(() => {return false;})
   const [cartModalOpen, setCartModalOpen] = useState(() => {return false;})
+  const [noAccountModalOpen, setNoAccountModalOpen] = useState(() => {return false});
 
   //useState hooks for objects
   
@@ -42,7 +45,9 @@ function App() {
         <SetModalContent.Provider value={setBuyModalContent}>
           <BuyModalOpenContext.Provider value={() => setBuyModalOpen(true)}>
             <CurrentUser.Provider value={currentUser}>
-              <Routing />
+              <NoAccountModalOpen.Provider value={() => setNoAccountModalOpen(true)}>
+                <Routing />
+              </NoAccountModalOpen.Provider>
             </CurrentUser.Provider>
           </BuyModalOpenContext.Provider>
         </SetModalContent.Provider>
@@ -80,6 +85,12 @@ function App() {
         />
       }
 
+      {
+        noAccountModalOpen && <NoAccountModal 
+          closeModal={() => setNoAccountModalOpen(false)}
+          setCurrentUser={setCurrentUser}
+        />
+      }
       
     </div>
   );

@@ -11,6 +11,7 @@ export default function ProductsSidebar() {
       <div className='sidebarLinks'>
         <Link 
           to = '/Music-Shop/Products/Instruments'
+          onClick={() => document.title = "Instruments"}
           className='sidebarLink'
         >
           Instruments
@@ -18,6 +19,7 @@ export default function ProductsSidebar() {
 
         <Link 
           to = '/Music-Shop/Products/Accessories'
+          onClick={() => document.title = "Accessories"}
           className='sidebarLink'
         >
           Accessories
@@ -25,6 +27,7 @@ export default function ProductsSidebar() {
 
         <Link 
           to = '/Music-Shop/Products/Music'
+          onClick={() => document.title = "Music"}
           className='sidebarLink'
         >
           Music
@@ -32,6 +35,7 @@ export default function ProductsSidebar() {
 
         <Link 
           to = '/Music-Shop/Products/Posters'
+          onClick={() => document.title = "Posters"}
           className='sidebarLink'
         >
           Posters

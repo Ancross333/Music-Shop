@@ -150,6 +150,16 @@
   margin-bottom: 50px;
 }
 
+.checkoutButtons{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.orderSuccess{
+  color: limegreen;
+}
+
 @media (max-width: 825px){
   .cartModalContainer{
     max-width: 10ch;

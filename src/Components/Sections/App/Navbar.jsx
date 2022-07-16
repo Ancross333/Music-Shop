@@ -9,14 +9,21 @@ export default function Navbar({loggedIn, setLoginOpen, setRegisterOpen, signOut
     <div className='navContainer'>
       
       <div className='logo'>
-        <Link to = '/Music-Shop'>
+        <Link 
+        onClick={() => document.title = "Music Shop"}
+        to = '/Music-Shop'>
           <img src={logoImage} alt='logo' />
         </Link>
       </div>
 
       <div className='navButtonContainer'>
 
-        <Link className='navLink' to='/Music-Shop/Products/Instruments'>Shop</Link>
+        <Link 
+        onClick={() => document.title = "Instruments"}
+        className='navLink' 
+        to='/Music-Shop/Products/Instruments'>
+        Shop
+        </Link>
 
         {
 

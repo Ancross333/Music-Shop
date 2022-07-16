@@ -1,14 +1,18 @@
 import React from 'react'
 import { useContext } from 'react'
 import { BuyModalOpenContext } from '../../Contexts/Modals/BuyModalOpenContext'
+import { NoAccountModalOpen } from '../../Contexts/Modals/NoAccountModalOpenContext'
 import { SetModalContent } from '../../Contexts/Modals/SetModalContentContext'
 import { CurrentUser } from '../../Contexts/User Data/CurrentUserContext'
 
 export default function ProductForSale( {title, description, image, alt, price} ) {
 
+  //Imported Contexts
+
   const openModal = useContext(BuyModalOpenContext)
   const setModalContent = useContext(SetModalContent)
   const currentUser = useContext(CurrentUser)
+  const openNoAccountModal = useContext(NoAccountModalOpen)
 
   //Open the 'add to cart' modal and set content to match the item
 
@@ -17,7 +21,7 @@ export default function ProductForSale( {title, description, image, alt, price} 
     //Prompt user to sign in
 
     if(currentUser === null){
-      alert('You need to be signed in to add an item to your cart. Note this application is for display, so your information is not stored')
+      openNoAccountModal()
       return;
     }
 
@@ -45,11 +49,15 @@ export default function ProductForSale( {title, description, image, alt, price} 
     
     if(newPrice.includes('.')){
 
-      //Add a 0 if there's only one digit after the decimal
+      //Add a 0 if there's only one digit after the decimal, otherwise chop off extras
 
       if( newPrice.substring(newPrice.indexOf('.')).length < 3){
           newPrice += '0';
       }
+      else{
+        newPrice = newPrice.substring(0, (newPrice.indexOf('.') + 3))
+      }
+
 
     }
 

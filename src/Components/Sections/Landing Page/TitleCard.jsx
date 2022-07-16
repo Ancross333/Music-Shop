@@ -11,7 +11,7 @@ export default function TitleCard() {
             <h2>We provide all things music</h2>
           </div>
           
-          <Link to='/Music-Shop/Products/Instruments' className='bigButton noMargin landButton navLink'>
+          <Link onClick={() => {document.title = "Instruments"}} to='/Music-Shop/Products/Instruments' className='bigButton noMargin landButton navLink'>
             Browse Store
           </Link>
         </div>

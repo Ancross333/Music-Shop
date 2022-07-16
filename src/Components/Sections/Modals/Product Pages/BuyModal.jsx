@@ -34,11 +34,15 @@ export default function BuyModal({closeModal, modalContent, currentUser}) {
 
   function addToCart(){
 
-    console.log(currentUser.cart)
+
+    currentUser.key++;
+
+    alert(currentUser.key)
     const newCartItem = {
       itemName: modalContent.title,
       quantity: numOfItems,
       price: totalPrice,
+      itemKey: currentUser.key,
 
     }
 
@@ -75,16 +79,16 @@ export default function BuyModal({closeModal, modalContent, currentUser}) {
 
 
           <div className='itemModifiers'>
-            <button onClick={() => removeItem()} className='modalButton circle'>
-              -
+            <button onClick={() => removeItem()} className='modalButton'>
+              Remove Item
             </button>
 
             <label>
               {numOfItems}
             </label>
 
-            <button onClick = {() => addItem()} className='modalButton circle'>
-              +
+            <button onClick = {() => addItem()} className='modalButton'>
+              Add Item
             </button>
           </div>
 
